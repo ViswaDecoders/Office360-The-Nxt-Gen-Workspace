@@ -16,12 +16,12 @@ The project aims to address various inefficiencies and challenges in the current
 
 ## Teck Stack
 
-Programming Languages: Python, HTML, CSS, Javascript
-Frameworks: Flask
-Web Template engine: Jinja
-Database: MySQL
-Tools: phpMyAdmin, Xampp Server
-External API: ChatGPT
+ - Programming Languages: Python, HTML, CSS, Javascript
+ - Frameworks: Flask
+ - Web Template engine: Jinja
+ - Database: MySQL
+ - Tools: phpMyAdmin, Xampp Server
+ - External API: ChatGPT
 
 ## Installation
 
