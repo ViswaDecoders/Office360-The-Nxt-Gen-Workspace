@@ -1,0 +1,554 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #ddd;
+}
+/* Navigation */
+/* Navigation */
+nav {
+  background-color: #222;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  position: relative;
+  margin: 0 10px;	
+}
+
+nav ul li a {
+  color: #ddd;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #444;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 2; /* Increased z-index value */
+  min-width: 200px;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul li ul li {
+  margin: 5px 0;
+  white-space: nowrap;
+}
+
+nav ul li ul li a {
+  padding: 5px 10px;
+}
+
+/* Hero Section */
+.hero-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url('path/to/your/background-image.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5); /* Initial dimming effect */
+  transition: filter 0.5s ease; /* Smooth transition for brightness */
+}
+
+.bg-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+}
+
+
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #aaa;
+}
+
+form {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #666;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Family Section */
+.family-section {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.post {
+  background-color: #666;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post-header h3 {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+.post-content {
+  line-height: 1.5;
+  color: #aaa;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.post-actions button {
+  background-color: transparent;
+  border: none;
+  color: #ddd;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.post-actions button:hover {
+  color: #007bff;
+}
+
+/* Queries Section */
+.queries-section {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.query {
+  background-color: #666;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.query-header {
+  font-style: bold;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.query-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.query-header h3 {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+.query-content {
+  line-height: 1.5;
+  color: #aaa;
+}
+
+.query-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.query-actions button {
+  background-color: transparent;
+  border: none;
+  color: #ddd;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.query-actions button:hover {
+  color: #007bff;
+}
+
+/* Locker Booking Form */
+#lockerBookingForm {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#lockerBookingForm label {
+  display: block;
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+#lockerBookingForm input[type="date"],
+#lockerBookingForm select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #666;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+#lockerBookingForm button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#lockerBookingForm button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: #555;
+  color: #ddd;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.login-container {
+  background-color: #333;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto; /* This will center the container horizontally */
+}
+
+.page-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Take up the full height of the viewport */
+}
+
+/* Meeting Room Booking Form */
+#meetingRoomBookingForm {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#meetingRoomBookingForm label {
+  display: block;
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+#meetingRoomBookingForm input[type="date"],
+#meetingRoomBookingForm input[type="time"],
+#meetingRoomBookingForm select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #666;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+#meetingRoomBookingForm button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#meetingRoomBookingForm button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Food Order Form */
+#foodOrderForm {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.food-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.food-item {
+  display: flex;
+  align-items: center;
+  background-color: #666;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.food-item label {
+  flex-grow: 1;
+  margin-right: 10px;
+  color: #ddd;
+}
+
+.food-item input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  background-color: #555;
+  color: #ddd;
+  text-align: center;
+}
+
+.food-item .item-price {
+  margin-left: 10px;
+  color: #ddd;
+}
+
+.total-amount {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.total-amount label {
+  margin-right: 10px;
+  color: #ddd;
+}
+
+.total-amount input[type="text"] {
+  width: 100px;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  background-color: #555;
+  color: #ddd;
+  text-align: right;
+}
+
+#foodOrderForm button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#foodOrderForm button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  width: 10%;
+  text-align: left;
+}
+
+
+#querydiv h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 20px 0;
+}
+
+#querydiv p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 20px 0;
+}
+
+#querydiv input[type="text"] {
+  width: 500px;
+  padding: 10px;
+  margin: 10px 10px;
+  border-radius: 5px;
+  border: 1px solid #222;
+  background-color: rgba(255, 255, 255, 0.103);
+  color: #ddd;
+}
+
+#querydiv input[type="submit"] {
+  left: 100px;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #222;
+  background-color: #222;
+  color: #ddd;
+  cursor: pointer;
+}
+
+textarea {
+  border-radius: 5px;
+  background-color: #666;
+  color: #ddd;
+}
+
+
+
+
+
+.bigbox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: space-around;
+}
+
+

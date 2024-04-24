@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family</title>
+  <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html">Bookings</a>
+        <ul>
+          <li><a href="meeting-rooms.html">Meeting Rooms</a></li>
+          <li><a href="food.html">Food</a></li>
+          <li><a href="lockers.html">Lockers</a></li>
+          <li><a href="recreation.html">Recreation</a></li>
+        </ul>
+      </li>
+      <li><a href="queries.html">Queries</a></li>
+      <li><a href="family.html">Family</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <h1>Family</h1>
+    <p>Share updates, photos, events, and more with your colleagues.</p>
+
+    <div class="family-section">
+      <div class="post">
+        <div class="post-header">
+          <img src="../assets/images/user-icon.png" alt="User Icon">
+          <h3>John Doe</h3>
+        </div>
+        <div class="post-content">
+          <p>Had a great time at the company picnic last weekend! Here are some photos:</p>
+          <img src="../assets/images/picnic-photo-1.jpg" alt="Picnic Photo 1">
+          <img src="../assets/images/picnic-photo-2.jpg" alt="Picnic Photo 2">
+        </div>
+        <div class="post-actions">
+          <button class="like-button" data-post-id="1">Like</button>
+          <button class="comment-button" data-post-id="1">Comment</button>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <img src="../assets/images/user-icon.png" alt="User Icon">
+          <h3>Jane Smith</h3>
+        </div>
+        <div class="post-content">
+          <p>Congratulations to our team for winning the hackathon! I'm proud of all your hard work.</p>
+        </div>
+        <div class="post-actions">
+          <button class="like-button" data-post-id="2">Like</button>
+          <button class="comment-button" data-post-id="2">Comment</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+</html>
