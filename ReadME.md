@@ -7,11 +7,21 @@ The project aims to address various inefficiencies and challenges in the current
 
 ## Table of Contents
 
+- [Teck Stack](#teck stack)
 - [Installation](#installation)
 - [APIreference](#APIreference)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
+
+## Teck Stack
+
+Programming Languages: Python, HTML, CSS, Javascript
+Frameworks: Flask
+Web Template engine: Jinja
+Database: MySQL
+Tools: phpMyAdmin, Xampp Server
+External API: ChatGPT
 
 ## Installation
 
@@ -26,7 +36,7 @@ The project aims to address various inefficiencies and challenges in the current
 
 ## APIreference
 
-1. chatgpt (GEN AI)
+1. OpenAI - ChatGPT(GEN AI)
 
 ## Contributing
 
