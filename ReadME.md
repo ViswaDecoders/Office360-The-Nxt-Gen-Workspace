@@ -7,7 +7,7 @@ The project aims to address various inefficiencies and challenges in the current
 
 ## Table of Contents
 
-- [Teck Stack](#teck stack)
+- [Teck Stack](#teck-stack)
 - [Installation](#installation)
 - [APIreference](#APIreference)
 - [Usage](#usage)
